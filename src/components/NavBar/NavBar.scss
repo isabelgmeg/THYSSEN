@@ -1,0 +1,18 @@
+nav {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+
+  &__wrap {
+    width: 40%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
