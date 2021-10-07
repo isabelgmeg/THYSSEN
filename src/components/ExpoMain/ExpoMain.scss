@@ -1,0 +1,88 @@
+@import "../../styles/utilities.scss";
+
+.mainInfo {
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mainPadding;
+    @include borders;
+    p {
+      margin: 0;
+    }
+  }
+  &__tittle {
+    width: 60%;
+    font-size: 2rem;
+  }
+  &__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__type {
+      color: $secText;
+      margin: 0;
+      font-size: 1rem;
+    }
+    &__daate {
+      color: $secText;
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+.picture__wrap {
+  width: 100vw;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.secondaryInfo {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  @include borders;
+
+  p {
+    margin: 0;
+  }
+
+  &__tickets {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    @include mainPadding;
+
+    &__separation {
+      border: 1px solid white;
+      height: 100%;
+    }
+    &__ticket {
+      @include mainPadding;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+    }
+    &__date {
+      margin: 0;
+      width: 50%;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
