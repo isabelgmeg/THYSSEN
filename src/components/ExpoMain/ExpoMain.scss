@@ -45,12 +45,7 @@
 }
 
 .secondaryInfo {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  font-size: 1.5rem;
-  @include borders;
+  @include flexBlock;
 
   p {
     margin: 0;
