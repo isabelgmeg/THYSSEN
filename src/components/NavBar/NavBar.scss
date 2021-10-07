@@ -1,18 +1,47 @@
+@import "../../styles/utilities.scss";
+
 nav {
   width: 100%;
-  min-height: 120px;
   display: flex;
   align-items: center;
+  padding: 3vh 1vh 3vh 1vh;
 }
 
 .logo {
   display: flex;
+  width: 80%;
+  align-items: center;
 
   &__wrap {
-    width: 40%;
-  }
-  img {
     width: 100%;
-    height: auto;
+    margin: 0px 3vw 0px 3vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__separation {
+    border: 1px solid black;
+    height: 3vh;
+  }
+  &__text {
+    width: 18vw;
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin: 0px 3vw 0px 3vw;
+  }
+}
+
+.nav__icon {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  &___stripe {
+    display: flex;
+    border-top: 1vw solid black;
+    padding: 1vh 0 0 1vh;
+    width: 3vh;
   }
 }
