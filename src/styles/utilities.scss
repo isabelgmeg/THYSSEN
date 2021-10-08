@@ -13,7 +13,17 @@ $secText: #e0ec00;
   padding: 1vh 2vh 1vh 2vh;
 }
 
-@mixin borders {
+@mixin borderTop {
   border-top: 1vw solid black;
+}
+@mixin borderBottom {
   border-bottom: 1vw solid black;
+}
+
+@mixin flexBlock {
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
 }

@@ -1,0 +1,31 @@
+@import "../../styles/utilities.scss";
+
+.marquee {
+  display: block;
+  width: 100vw;
+  &__visibleWrap {
+    overflow: hidden;
+    @include flexBlock;
+    width: 300vw;
+
+    &__element {
+      width: 40vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.marquee__image__wrap {
+  height: 10vw;
+  width: 20vw;
+  border-radius: 3vw;
+  overflow: hidden;
+
+  img {
+    height: auto;
+    width: 20vw;
+  }
+}

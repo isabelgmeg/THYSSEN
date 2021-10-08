@@ -11,7 +11,7 @@ export default function ExpoMain({ tittle, type, date, picture }) {
         </section>
         <aside className="mainInfo__info">
           <p className="mainInfo__info__type">{type}</p>
-          <p lassName="mainInfo__info__daate">{date}</p>
+          <p className="mainInfo__info__daate">{date}</p>
         </aside>
       </section>
       <section className="picture__wrap">
