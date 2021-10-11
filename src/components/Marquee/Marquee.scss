@@ -8,27 +8,35 @@
   @include borderTop;
   @include borderBottom;
   &__visibleWrap {
-    background-color: $marquee;
+    background-color: $background;
     justify-content: space-around;
     animation: marquee 8s linear infinite;
+
     @include flexBlock;
     width: 350vw;
     position: relative;
 
     &__element {
-      width: 40vw;
+      width: 50vw;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       overflow: hidden;
       margin-right: 2vh;
 
       p {
         margin: 0;
         font-size: 1.2rem;
+        color: black;
+        padding-left: 3vw;
+        width: 50%;
+      }
+    }
+    &:hover {
+      background-color: $marquee;
+      p {
         color: white;
-        padding-left: 1vh;
       }
     }
   }

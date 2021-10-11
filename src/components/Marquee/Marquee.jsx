@@ -26,7 +26,7 @@ export default function Marquee({ pics, tittle, text }) {
               <div className="marquee__image__wrap">
                 <img src={singlePic} alt={tittle}></img>
               </div>
-              <p>"la de "</p>
+              <p>{tittle}</p>
             </div>
           );
         })}

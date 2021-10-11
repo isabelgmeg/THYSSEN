@@ -22,7 +22,7 @@ function App() {
       />
       <Marquee
         pics={pictures}
-        tittle="hey"
+        tittle="La maquina de Magritte"
         text="El cuadro restaurado se presenta junto a un vídeo que explica e ilustra la intervención realizada y los resultados obtenidos gracias al estudio técnico que acompaña a toda restauración, recogidos también en una publicación monográfica."
       />
     </div>
