@@ -20,7 +20,11 @@ function App() {
         date="14.09.21-10.01.22"
         picture="https://www.renemagritte.org/images/paintings/the-false-mirror.jpg"
       />
-      <Marquee pics={pictures} tittle="hey" text="aloha" />
+      <Marquee
+        pics={pictures}
+        tittle="hey"
+        text="El cuadro restaurado se presenta junto a un vídeo que explica e ilustra la intervención realizada y los resultados obtenidos gracias al estudio técnico que acompaña a toda restauración, recogidos también en una publicación monográfica."
+      />
     </div>
   );
 }

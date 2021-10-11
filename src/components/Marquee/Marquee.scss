@@ -3,10 +3,17 @@
 .marquee {
   display: block;
   width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  @include borderTop;
+  @include borderBottom;
   &__visibleWrap {
-    overflow: hidden;
+    background-color: $marquee;
+    justify-content: space-around;
+    animation: marquee 8s linear infinite;
     @include flexBlock;
-    width: 300vw;
+    width: 350vw;
+    position: relative;
 
     &__element {
       width: 40vw;
@@ -14,18 +21,51 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      overflow: hidden;
+      margin-right: 2vh;
+
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+        color: white;
+        padding-left: 1vh;
+      }
+    }
+  }
+  &__image__wrap {
+    height: 70%;
+    width: 10vh;
+    max-width: 50vh;
+    border-radius: 3vw;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 20vw;
+    }
+  }
+  &__hiddenInfo {
+    display: none;
+    text-align: justify;
+    background-color: $background;
+    @include borderTop;
+
+    @include mainPadding;
+    p {
+      margin: 0;
     }
   }
 }
 
-.marquee__image__wrap {
-  height: 10vw;
-  width: 20vw;
-  border-radius: 3vw;
-  overflow: hidden;
+.marquee__visibleWrap:hover + .marquee__hiddenInfo {
+  background-color: transparent;
+  display: block;
+}
 
-  img {
-    height: auto;
-    width: 20vw;
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
