@@ -4,9 +4,7 @@
   display: block;
   width: 100vw;
   overflow: hidden;
-  position: absolute;
   @include borderTop;
-  @include borderBottom;
   &__visibleWrap {
     background-color: $background;
     justify-content: space-around;
