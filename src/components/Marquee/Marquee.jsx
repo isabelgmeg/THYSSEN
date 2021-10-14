@@ -14,7 +14,6 @@ export default function Marquee({ info }) {
   return (
     <div className="displayArtciles">
       {info.map((article, index) => {
-        console.log(article);
         return (
           <div key={index} className="marquee">
             <div className="marquee__visibleWrap">
