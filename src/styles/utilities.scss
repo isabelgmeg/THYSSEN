@@ -14,6 +14,12 @@ $marquee: #7f47dd;
   padding: 1vh 2vh 1vh 2vh;
 }
 
+@mixin flexBlock {
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
 @mixin borderTop {
   border-top: 1vw solid black;
 }
