@@ -6,7 +6,9 @@
     flex-direction: row;
     justify-content: space-between;
     @include mainPadding;
-    @include borders;
+    @include borderTop;
+    @include borderBottom;
+
     p {
       margin: 0;
     }
@@ -27,7 +29,7 @@
       font-size: 1rem;
     }
     &__daate {
-      color: $secText;
+      color: black;
       margin: 0;
       font-size: 1rem;
     }
@@ -37,6 +39,9 @@
 .picture__wrap {
   width: 100vw;
   line-height: 0;
+  height: auto;
+  overflow: hidden;
+  @include borderBottom;
 
   img {
     width: 100%;

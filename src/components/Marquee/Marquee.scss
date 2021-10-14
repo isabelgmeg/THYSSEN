@@ -1,0 +1,77 @@
+@import "../../styles/utilities.scss";
+
+.marquee {
+  display: block;
+  width: 100vw;
+  overflow: hidden;
+  @include borderTop;
+  &__visibleWrap {
+    background-color: $background;
+    justify-content: space-around;
+    animation: marquee 8s linear infinite;
+
+    @include flexBlock;
+    width: 350vw;
+    position: relative;
+
+    &__element {
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      margin-right: 2vh;
+
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+        color: black;
+        padding-left: 3vw;
+        width: 50%;
+      }
+    }
+    &:hover {
+      background-color: $marquee;
+      p {
+        color: white;
+      }
+    }
+  }
+  &__image__wrap {
+    height: 70%;
+    width: 10vh;
+    max-width: 50vh;
+    border-radius: 3vw;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 20vw;
+    }
+  }
+  &__hiddenInfo {
+    display: none;
+    text-align: justify;
+    background-color: $background;
+    @include borderTop;
+
+    @include mainPadding;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.marquee__visibleWrap:hover + .marquee__hiddenInfo {
+  background-color: transparent;
+  display: block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
