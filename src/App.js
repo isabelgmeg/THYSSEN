@@ -2,7 +2,6 @@ import NavBar from "./components/NavBar/NavBar";
 import ExpoMain from "./components/ExpoMain/ExpoMain";
 import Marquee from "./components/Marquee/Marquee";
 import "./App.scss";
-import { useEffect } from "react";
 
 import articles from "./utilities";
 
