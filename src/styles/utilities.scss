@@ -20,6 +20,7 @@ $marquee: #7f47dd;
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
+}
 @mixin borderTop {
   border-top: 1vw solid black;
 }
