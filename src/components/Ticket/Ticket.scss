@@ -1,0 +1,14 @@
+@import "../../styles/utilities.scss";
+
+.ticket__wrap {
+  @include borderTop;
+  @include flexBlock;
+  background-color: $secText;
+  align-items: center;
+  display: flex;
+  @include mainPadding;
+  p {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
